@@ -15,8 +15,8 @@
 					<div class="link"><div class="inner"><a href="portfolio.html">portfolio</a></div></div>
 				</div>
 			</div>
-			<div class="blurb">
-				<span class="inner">I am a writer, poet, comedian, and game developer with 5+ years experience writing/editing copy and UI text. I’m particularly interested in pop culture, queer identity, advertising, fashion, emerging technologies, and interactive text (apps + games). I graduated from the University of Chicago and am based in Brooklyn, New York. evanharold@gmail.com</span>
+			<div class="blurb" id="blurb">
+				<div class="inside">I am a writer, poet, comedian, and game developer with 5+ years experience writing/editing copy and UI text. I’m particularly interested in pop culture, queer identity, advertising, fashion, emerging technologies, and interactive text (apps + games). I graduated from the University of Chicago and am based in Brooklyn, New York. evanharold@gmail.com</div>
 			</div>
 		</div>
 	</div>
@@ -117,6 +117,14 @@
 		transform: skewX(7deg);
 	}
 </style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+	$(function() {
+	    while( $('#blurb div').height() > $('#blurb').height() ) {
+	        $('#blurb div').css('font-size', (parseFloat($('#blurb div').css('font-size')) - 0.25) + "px" );
+	    }
+	});
+</script>
 <script>
  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
