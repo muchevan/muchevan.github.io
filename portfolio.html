@@ -355,6 +355,7 @@
 	}
 
 	.wrapper {
+		opacity: 0;
 		width: 100%;
 		max-width: 650px;
 		margin-left: auto;
@@ -559,6 +560,8 @@
 		$(".section-head").each(function(){
 			skew1($(this), ALPHA_0);
 		});
+
+		$(".wrapper").fadeTo("fast",1);
 
 	}
 
