@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>evan harold dot com</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<div class="box">
+	<div class="inner">
+		<div class="logo"><img src="eh_logo_outlines.svg" id="logo"></div>
+		<div class="copy">
+			<div class="portfolio-link">
+				<div class="inner">
+					<div class="link"><div class="inner"><a href="portfolio.html">portfolio</a></div></div>
+				</div>
+			</div>
+			<div class="blurb">
+				<span class="inner">I am a writer, poet, comedian, and game developer with 5+ years experience writing/editing copy and UI text. I’m particularly interested in pop culture, queer identity, advertising, fashion, emerging technologies, and interactive text (apps + games). I graduated from the University of Chicago and am based in Brooklyn, New York. evanharold@gmail.com</span>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+	@import 'https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i';
+
+	html, body {
+		font-family: Lato, sans-serif;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		background: #55472e;
+	}
+
+	a:link, a:visited {
+		color: white;
+	}
+	.box {
+		background-color: white;
+		max-width: 70vmin;
+		max-height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		transform: skewX(-7deg) translateY(-50%);
+		padding-bottom: 2em;
+
+		position: relative;
+  		top: 50%;
+  		border-radius: 6px;
+	}
+	.box .inner {
+		transform: skewX(7deg);
+	}
+
+	#logo {
+		width: 100%;
+		height: auto;
+		margin-left: 3%;
+	}
+
+	.portfolio-link {
+		height: 250px;
+		width: 40%;
+		transform: skewX(-7deg);
+		background: #55472e;
+		background-image: url(bubbles.jpg);
+		background-repeat: repeat;
+		background-size: 60%, 60%;
+		display: inline-block;
+		vertical-align: top;
+		border-radius: 6px;
+	}
+	.portfolio-link .inner {
+		transform: skewX(7deg);
+		position: relative;
+		text-align: center;
+	}
+
+	.portfolio-link .inner .link {
+		font-weight: 700;
+		font-style: italic;
+		color: white;
+		font-size: 32px;
+		background-color: #55472e;
+		display: inline-block;
+		padding: 15px;
+		padding-top: 8px;
+		border-radius: 5px;
+		text-decoration: underline;
+		/*position: absolute;*/
+		/*top: 90px;*/
+		/*left: 3vmax;*/
+		transform: skewX(-7deg);
+		cursor: pointer;
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: 40%;
+	}
+
+	.portfolio-link .inner .link .inner {
+		transform: skewX(7deg);
+	}
+
+	.blurb {
+		overflow-y: hidden;
+		max-height: 250px;
+		vertical-align: top;
+		width: 40%;
+		display: inline-block;
+		transform: skewX(-7deg);
+		margin-left: 5%;
+		line-height: 1.55;
+		font-size: 14.5px;
+	}
+	.blurb .inner {
+		transform: skewX(7deg);
+	}
+</style>
+</body>
+</html>
