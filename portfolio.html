@@ -585,20 +585,23 @@
 			case "img":
 				jQuery("#modal-image").show();
 				jQuery("#modal-image").attr('src',href);
+				jQuery("#modal-image").load(function(){
+					modal.fadeIn();
+				});
 				break;
 			case "pdf":
 				jQuery("#modal-pdf").show();
 				PDFObject.embed(href,"#modal-pdf");
+				modal.fadeIn();
 				break;
 			case "mp3":
 				jQuery("#modal-audio").show();
 				var a = jQuery("#modal-audio-player");
 				a.attr('src',href);
 				a.load();
+				modal.fadeIn();
 				break;
 		}
-
-		modal.fadeIn();
 
 	}
 
