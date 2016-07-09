@@ -120,8 +120,14 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script>
 	$(function() {
+		var MAX_LOOPS = 300;
+		var i = 0;
 	    while( $('#blurb div').height() > $('#blurb').height() ) {
+	    	i++;
 	        $('#blurb div').css('font-size', (parseFloat($('#blurb div').css('font-size')) - 0.25) + "px" );
+	    	if(i>MAX_LOOPS) {
+	    		break;
+	    	}
 	    }
 	});
 </script>
